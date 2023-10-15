@@ -1,18 +1,16 @@
 body {
-    background-color: rgb(23, 27, 59);
+    background-image: linear-gradient(rgb(56,56,56), rgb(7,9,0));
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
     color:rgb(0, 183, 255);
-    text-align: center;
+}
+
+h2{
+  color:white
 }
 
 p {
-    text-align: center;
     color: white;
-}
-
-img {
-    align-content: center;
 }
