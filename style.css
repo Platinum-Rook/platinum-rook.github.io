@@ -1,20 +1,21 @@
 body{
-    background-color: rgb(30,34,38);
+    background-color:#17191C;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
-    color:rgb(0, 183, 255);
+    color:#17EBFF;
 }
 
 h2{
-    color:white
+    color:#17EBFF;
 }
 
 p{
-    color: white;
+    color:#1F485E;
 }
+
 
 .center{
     display: block;
@@ -29,7 +30,7 @@ p{
   display: block;
   margin: auto;
   text-align: center;
-  background-color: red;
+  background-color: #EB3722;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 200px;
