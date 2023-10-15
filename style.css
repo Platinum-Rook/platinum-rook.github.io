@@ -1,7 +1,8 @@
 body {
     background-image: linear-gradient(rgb(42,47,53), rgb(16,20,22));
-    height: 100pc;
-    width: 100pc;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
 
