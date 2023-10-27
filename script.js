@@ -14,3 +14,14 @@ console.log(`
 i see you.
 `);
 
+
+function getJson(linkPath) {
+    let Data;
+    fetch(`../${linkPath}`, "GET").then((res) => {return res.json;}).then((data) => {Data = data;});
+
+    try {
+        console.log(Data);
+    } catch (error) {
+        throw new Error("Failed to get json.")
+    };
+}
