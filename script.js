@@ -17,7 +17,7 @@ i see you.
 
 function getJson(linkPath) {
     let Data;
-    fetch(`../${linkPath}`, "GET").then((res) => {return res.json;}).then((data) => {Data = data;});
+    fetch(linkPath, "GET").then((res) => {return res.json;}).then((data) => {Data = data;});
 
     try {
         console.log(Data);
@@ -25,3 +25,6 @@ function getJson(linkPath) {
         throw new Error("Failed to get json.")
     };
 }
+
+
+getJson("https://platinum-rook.github.io/Button%20links.json")
