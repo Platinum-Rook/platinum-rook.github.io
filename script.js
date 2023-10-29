@@ -15,16 +15,29 @@ i see you.
 `);
 
 
-function getJson(linkPath) {
-    let Data;
-    fetch(linkPath, "GET").then((res) => {return res.json;}).then((data) => {Data = data;});
-
+async function getJson(linkPath) {
     try {
-        console.log(Data);
+      const response = await fetch(linkPath);
+      if (response.ok) {
+        const data = await response.json();
+        return data;
+      } else {
+        throw new Error("Failed to fetch JSON.");
+      }
     } catch (error) {
-        throw new Error("Failed to get json.")
-    };
-}
-
-
-getJson("https://platinum-rook.github.io/Button%20links.json")
+      console.error('Error:', error);
+      return null; // or any other error handling logic
+    }
+  }
+  
+  async function fetchData() {
+    try {
+      const returnedData = await getJson("https://platinum-rook.github.io/Button%20links.json");
+      console.log(returnedData);
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  }
+  
+  fetchData();
+  
