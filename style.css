@@ -42,9 +42,14 @@ p{
     src: url(custom%20fonts/Outfit.ttf);
 }
 
-.flexbox-center {
+.container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    
+    height: auto;
+    width: 600px;
+
 }
