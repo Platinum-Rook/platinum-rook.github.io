@@ -1,7 +1,16 @@
+html {
+    height: 100vh;
+
+}
+
 body{
+    display: flex;
     background-color:#17191C;
     overflow: hidden;
     font-family: "Outfit", Arial, Helvetica, sans-serif;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 h1{
@@ -48,8 +57,6 @@ p{
     justify-content: center;
     align-items: center;
     text-align: center;
-    
-    height: auto;
+    margin: 0 auto;
     width: 600px;
-
 }
