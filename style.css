@@ -9,7 +9,6 @@ body{
     overflow: hidden;
     font-family: "Outfit", Arial, Helvetica, sans-serif;
     height: 1500px;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     overflow-y: scroll;
