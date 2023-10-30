@@ -1,6 +1,6 @@
 html {
     height: 100vh;
-
+    overflow: horizontal;
 }
 
 body{
@@ -8,18 +8,25 @@ body{
     background-color:rgb(23, 25, 28);
     overflow: hidden;
     font-family: "Outfit", Arial, Helvetica, sans-serif;
-    height: 100vh;
+    height: 1500px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+    text-align: center;
 }
 
 h1{
     color:rgb(23, 235, 255);
     margin-top: 0;
+    font-size: 50px;
+    text-shadow: 0px 0px 10px rgba(23, 235, 255, 0.5);
 }
 
 h2{
     color:rgb(23, 235, 255);
+  font-size: 30px;
+  text-shadow: 0px 0px 10px rgba(23, 235, 255, 0.5);
 }
 
 p{
@@ -47,6 +54,8 @@ p{
   padding-bottom: 10px;
   width: 200px;
   border-radius: 30px;
+  
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.4);
 }
 
 @font-face {
@@ -63,6 +72,17 @@ p{
     align-items: center;
     text-align: center;
     margin: 0 auto;
-    width: 600px;
+    max-width: 600px;
+    border: rgb(23, 235, 255) solid;
+    border-width: 2px;
     border-radius: 20px;
+  box-shadow:inset 0px 0px 10px 2px rgba(23, 235, 255, 0.25), 0px 0px 10px 2px rgba(23, 235, 255, 0.25), 0px 10px 4px 0px rgba(0,0,0,0.4);
+  
+}
+
+.youtube-iframe {
+  height: 50vw;
+  width: 75vw;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.4);
 }
