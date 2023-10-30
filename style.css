@@ -8,10 +8,9 @@ body{
     background-color:rgb(23, 25, 28);
     overflow: hidden;
     font-family: "Outfit", Arial, Helvetica, sans-serif;
-    height: 1500px;
+    height: 100vh;
     align-items: center;
     flex-direction: column;
-    overflow-y: scroll;
     text-align: center;
 }
 
@@ -76,5 +75,5 @@ p{
     border-width: 2px;
     border-radius: 20px;
   box-shadow:inset 0px 0px 10px 2px rgba(23, 235, 255, 0.25), 0px 0px 10px 2px rgba(23, 235, 255, 0.25), 0px 10px 4px 0px rgba(0,0,0,0.4);
-  margin-top: 50px;
+  margin-top: 20px;
 }
